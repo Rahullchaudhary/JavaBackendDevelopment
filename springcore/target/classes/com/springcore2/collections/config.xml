@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 	xmlns:context="http://www.springframework.org/schema/context"
+ 	xmlns:p="http://www.springframework.org/schema/p"
+ 	xmlns:c="http://www.springframework.org/schema/c"
+ 	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 	http://www.springframework.org/schema/beans/spring-beans.xsd
+ 	http://www.springframework.org/schema/context
+ 	http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ 
+ <bean class="com.springcore2.collections.Student" name="student">
+ 	<property name="name" value="rahul"/>
+ 	<property name="phones">
+ 	
+ 	
+ 	<!-- if you have a single element than -->
+ 	
+ 	<value>8881092032</value>
+ 		<!-- <list>
+ 			<value>8881092032</value>
+ 			<value>7275197153</value>
+ 			<value>8881092031</value>
+ 			<value>7275197152</value>
+ 			<null></null>
+ 			
+ 		</list> -->
+ 	
+ 	</property>
+ 	<property name="addresses">
+ 		<set>
+ 		
+ 			<value>Delhi</value>
+ 			<value>Kanpur</value>
+ 			<value>Noida</value>
+ 		</set>
+ 	
+ 	
+ 	</property>
+ 	<property name="courses">
+ 	
+ 		<map>
+ 			<entry key="Java" value="2Month"/>
+ 			<entry key="Python" value="1.4Month"/>
+ 			<entry key="C" value="1.5Month"/>
+ 			<entry key="Mysql" value="1Month"/>
+ 			
+ 		
+ 		</map>
+ 	
+ 	 </property>
+ 	 <!-- <property name="props">
+ 	
+ 		<props>
+ 			<prop key="name">Rahul</prop>
+ 			<prop key="channelName">Leetcode</prop>
+ 		
+ 		</props>
+ 	
+ 	</property>  -->
+ 
+ 
+ 
+ </bean>
+
+ 	
+ 	
+ 
+ 
+</beans>
